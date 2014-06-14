@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+.btn {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+}
