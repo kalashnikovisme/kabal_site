@@ -18,7 +18,7 @@ end
 
 group :test do
   gem 'simplecov', require: false
-  gem 'minitest'
+  gem 'minitest', '4.7.5'
   gem "factory_girl_rails", "~> 4.0", require: false
   gem 'tconsole', git: "git://github.com/gma/tconsole"
   gem 'pry'

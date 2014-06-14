@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20140613233805) do
 
   create_table "numbers", :force => true do |t|
-    t.integer  "value"
+    t.string   "value"
     t.boolean  "right_answer"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false

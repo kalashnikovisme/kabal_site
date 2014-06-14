@@ -1,7 +1,7 @@
 class CreateNumbers < ActiveRecord::Migration
   def change
     create_table :numbers do |t|
-      t.integer :value
+      t.string :value
       t.boolean :right_answer
 
       t.timestamps
