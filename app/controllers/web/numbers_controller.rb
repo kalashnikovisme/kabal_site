@@ -17,6 +17,7 @@ class Web::NumbersController < Web::ApplicationController
   include Kabal
 
   def show
+    @new_number = Number.new
     @number = Number.find params[:id]
     @number_as_words = to_text @number.value
   end

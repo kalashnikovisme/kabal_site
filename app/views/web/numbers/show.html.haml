@@ -1,5 +1,5 @@
-= simple_form_for @number do |f|
-  = f.input :value, as: :string
+= simple_form_for @new_number do |f|
+  = f.input :value, as: :string, input_html: { value: @number.value }
   = f.submit
 
 = @number_as_words
