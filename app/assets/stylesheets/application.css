@@ -12,10 +12,37 @@
  *= require_tree .
  */
 
+.form-actions {
+  width: 100%;
+  float: left;
+}
+
 .btn {
   margin-top: 10px;
 }
 
 input[type="text"] {
   padding: 10px;
+}
+
+.input {
+  margin-bottom: 20px;
+  float: left;
+}
+
+.select {
+  width: auto;
+  margin-left: 10px;
+  float: left;
+  height: 45px !important;
+  border-color: grey !important;
+}
+
+.form-control {
+  padding: 10px;
+}
+
+.result {
+  width: 100%;
+  float: left;
 }

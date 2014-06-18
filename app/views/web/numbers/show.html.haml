@@ -1,10 +1,13 @@
 %h2
   = t('.enter_another_number')
-= simple_form_for @new_number do |f|
+= simple_form_for @new_number, html: { class: "form-horizontal" } do |f|
   = f.input :value, label: false, as: :string, input_html: { value: @number.value }
-  = f.button :submit, t('buttons.press_button'), class: "btn btn-primary btn-lg"
+  = f.input :language, as: :select, collection: kabal_support_languages, input_html: { class: "form-control" }, label: false, selected: @number.language
+  .form-actions
+    = f.button :submit, t('buttons.press_button'), class: "btn btn-primary btn-lg"
 
-%h4
-  = t('.you_have_entered')
-  \:
-  = @number_as_words
+.result
+  %h4
+    = t('.you_have_entered')
+    \:
+    = @number_as_words
