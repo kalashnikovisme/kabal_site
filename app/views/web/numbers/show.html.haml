@@ -1,5 +1,10 @@
+%h2
+  = t('.enter_another_number')
 = simple_form_for @new_number do |f|
-  = f.input :value, as: :string, input_html: { value: @number.value }
-  = f.submit
+  = f.input :value, label: false, as: :string, input_html: { value: @number.value }
+  = f.button :submit, t('buttons.press_button'), class: "btn btn-primary btn-lg"
 
-= @number_as_words
+%h4
+  = t('.you_have_entered')
+  \:
+  = @number_as_words

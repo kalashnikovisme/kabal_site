@@ -1,0 +1,8 @@
+ru:
+  web:
+    numbers:
+      new:
+        type_a_number: Введите число
+      show:
+        enter_another_number: Введите другое число
+        you_have_entered: "Вы ввели"
