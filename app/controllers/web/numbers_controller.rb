@@ -19,6 +19,6 @@ class Web::NumbersController < Web::ApplicationController
   def show
     @new_number = Number.new
     @number = Number.find params[:id]
-    @number_as_words = to_text @number.value.to_i
+    @number_as_words = to_text_in_language @number.value.to_i, @number.language
   end
 end
