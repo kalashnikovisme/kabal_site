@@ -1,4 +1,7 @@
 ru:
+  languages:
+    Russian: Русский
+    English: Английский
   helpers:
     what_number_is: "Что за число?"
   buttons:
