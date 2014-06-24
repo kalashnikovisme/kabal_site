@@ -6,3 +6,6 @@ ru:
       show:
         enter_another_number: Введите другое число
         you_have_entered: "Вы ввели"
+        wrong: "Неправильно?"
+        wrong_number_created: Число составлено неправильно
+        type_your_comment: "Добавьте комментарий (необязательно)"

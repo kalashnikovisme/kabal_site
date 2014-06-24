@@ -10,6 +10,7 @@ gem 'kabal'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'bootstrap_flash_messages'
+gem 'react-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
