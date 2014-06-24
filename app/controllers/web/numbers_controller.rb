@@ -25,7 +25,9 @@ class Web::NumbersController < Web::ApplicationController
   def wrong
     @number = Number.find params[:id]
     if @number.update_attributes params[:number]
-
+      redirect_to root_path, flash: :success
+    else
+      redirect_to @number, flash: :error
     end
   end
 end
