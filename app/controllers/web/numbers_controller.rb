@@ -21,4 +21,11 @@ class Web::NumbersController < Web::ApplicationController
     @number = Number.find params[:id]
     @number_as_words = to_text_in_language @number.value.to_i, @number.language
   end
+
+  def wrong
+    @number = Number.find params[:id]
+    if @number.update_attributes params[:number]
+
+    end
+  end
 end

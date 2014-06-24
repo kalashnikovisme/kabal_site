@@ -1,5 +1,5 @@
 class Number < ActiveRecord::Base
-  attr_accessible :right_answer,
+  attr_accessible :comment,
                   :value,
                   :language
 
