@@ -11,14 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140623164958) do
+ActiveRecord::Schema.define(:version => 20140625064219) do
+
+  create_table "comments", :force => true do |t|
+    t.text     "text"
+    t.integer  "number_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "numbers", :force => true do |t|
     t.string   "value"
     t.string   "language"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.text     "comment"
   end
 
 end

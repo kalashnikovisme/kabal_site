@@ -23,9 +23,4 @@ class Web::NumbersControllerTest < ActionController::TestCase
     get :show, id: @number
     assert_response :success, @response.body
   end
-
-  test "should put wrong" do
-    put :wrong, id: @number
-    assert_redirected_to root_path
-  end
 end
