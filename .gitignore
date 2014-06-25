@@ -18,4 +18,3 @@
 .vagrant
 *.sqlite3-journal
 *.directory
-Gemfile.lock
