@@ -10,6 +10,6 @@ class Web::Admin::WelcomeControllerTest < ActionController::TestCase
   test "should not get index" do
     get :index
     assert_response :redirect, @response.body
-    assert_redirected_to '/404'
+    assert_redirected_to new_session_path
   end
 end
