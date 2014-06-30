@@ -3,7 +3,7 @@ class Web::ApplicationController < ApplicationController
 
   def check_signed_in
     unless signed_in?
-      redirect_to '/404'
+      redirect_to new_session_path
     end
   end
 end
