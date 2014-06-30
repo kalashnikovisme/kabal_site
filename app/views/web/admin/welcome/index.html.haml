@@ -1,0 +1,16 @@
+%h3
+  = t('.admin_panel')
+%hr
+%ul.list-group
+  %li.list-group-item
+    %span.badge
+      = numbers_count
+    = link_to t('.numbers_count'), admin_numbers_path
+  %li.list-group-item
+    %span.badge
+      = comments_count
+    = link_to t('.comments_count'), admin_comments_path
+  %li.list-group-item
+    %span.badge
+      = pages_count
+    = link_to t('.pages_count'), admin_pages_path
