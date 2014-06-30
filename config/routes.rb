@@ -9,6 +9,8 @@ KabalSite::Application.routes.draw do
     resource :session, only: [:new, :create, :destroy]
     namespace :admin do
       resources :pages, except: :show
+      resources :numbers, except: :show
+      resources :comments, except: :show
     end
   end
 end
