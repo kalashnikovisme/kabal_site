@@ -9,3 +9,7 @@ ru:
         wrong: "Неправильно?"
         wrong_number_created: Число составлено неправильно
         type_your_comment: "Добавьте комментарий (необязательно)"
+    admin:
+      pages:
+        form:
+          title: Название страницы

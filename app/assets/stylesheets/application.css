@@ -12,6 +12,10 @@
  *= require_tree .
  */
 
+.jumbotron {
+  padding-top: 10px !important;
+}
+
 .form-actions {
   width: 100%;
   float: left;
@@ -50,4 +54,11 @@ input[type="text"] {
 .field {
   width: 50%;
   margin-right: 50%;
+  position: relative;
+}
+
+.field_ckeditor {
+  width: 100%;
+  position: relative;
+  float: left;
 }
