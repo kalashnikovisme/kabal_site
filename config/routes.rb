@@ -4,5 +4,6 @@ KabalSite::Application.routes.draw do
   scope module: :web do
     resources :numbers, only: [ :new, :create, :show ]
     resources :comments, only: :create
+    resource :sessions, only: [:new, :create, :destroy]
   end
 end
