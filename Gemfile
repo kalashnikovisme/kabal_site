@@ -12,6 +12,7 @@ gem 'simple_form'
 gem 'bootstrap_flash_messages'
 gem 'react-rails'
 gem 'draper'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
