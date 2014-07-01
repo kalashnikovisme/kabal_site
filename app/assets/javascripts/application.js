@@ -11,7 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require ckeditor/init
 //= require jquery_ujs
 //= require react
 //= require director
