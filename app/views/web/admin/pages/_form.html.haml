@@ -1,9 +1,9 @@
 = simple_form_for @page, url: { controller: "admin/pages", action: action }, html: { class: 'form-horizontal' } do |f|
   %fieldset
     .field
-      = f.input :title, as: :string, label: false
+      = f.input :title, as: :string, label: false, placeholder: t('.title')
     .field_ckeditor
-      = f.ckeditor :body, label: false
+      = f.input :body, label: false, input_html: { cols: 125 }
   .form-actions
     = f.button :submit, class: 'btn btn-primary'
     = link_to t('.cancel', default: t("helpers.links.cancel")), admin_pages_path, class: 'btn'

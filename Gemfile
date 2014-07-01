@@ -13,7 +13,6 @@ gem 'bootstrap_flash_messages'
 gem 'react-rails'
 gem 'draper'
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'ckeditor'
 gem 'russian'
 
 group :assets do
