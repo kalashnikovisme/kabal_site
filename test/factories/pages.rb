@@ -3,5 +3,6 @@ FactoryGirl.define do
     title
     body { generate :string }
     slug { generate :string }
+    navbar { true }
   end
 end

@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require react
 //= require director
+
+$(document).ready(function() {
+  $("#navbar").find("li").each(function() {
+    if (document.URL == this.children[0]) {
+      $(this).addClass("active");
+    }
+  });
+});
