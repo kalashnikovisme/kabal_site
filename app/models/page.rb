@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  attr_accessible :body, :title, :slug
+  attr_accessible :body, :title, :slug, :navbar
 
   validates :body, presence: true
   validates :title, presence: true

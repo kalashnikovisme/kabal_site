@@ -34,6 +34,10 @@ input[type="text"] {
   float: left;
 }
 
+.input.boolean {
+  margin-left: 89px;
+}
+
 .select {
   width: auto;
   margin-left: 10px;
@@ -52,9 +56,10 @@ input[type="text"] {
 }
 
 .field {
-  width: 50%;
-  margin-right: 50%;
   position: relative;
+  width: 50%;
+  height: auto;
+  margin-right: 50%;
 }
 
 .field_ckeditor {
