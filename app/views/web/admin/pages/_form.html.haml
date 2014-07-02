@@ -2,6 +2,8 @@
   %fieldset
     .field
       = f.input :title, as: :string, label: false, placeholder: t('.title')
+    .field
+      = f.input :slug, as: :string, label: false
     .field_ckeditor
       = f.input :body, label: false, input_html: { cols: 125 }
   .form-actions

@@ -6,7 +6,9 @@ KabalSite::Application.routes.draw do
   scope module: :web do
     resources :numbers, only: [ :new, :create, :show ]
     resources :comments, only: :create
-    resources :pages, only: :show
+    resources :pages do
+      get ":slug" => "pages#show"
+    end
     resource :session, only: [:new, :create, :destroy]
     namespace :admin do
       resources :pages, except: :show
