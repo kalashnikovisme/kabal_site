@@ -5,7 +5,7 @@
     .field
       = f.input :slug, as: :string, label: false
     .field.checkbox
-      = f.input :navbar, as: :boolean
+      = f.input :navbar, as: :boolean, placeholder: t('.slug')
     .field_ckeditor
       = f.input :body, label: false, input_html: { cols: 125 }
   .form-actions
