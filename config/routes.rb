@@ -7,7 +7,9 @@ KabalSite::Application.routes.draw do
     resources :numbers, only: [ :new, :create, :show ]
     resources :comments, only: :create
     resources :pages do
-      get ":slug" => "pages#show"
+      collection do
+        get ":slug" => "pages#show"
+      end
     end
     resource :session, only: [:new, :create, :destroy]
     namespace :admin do
