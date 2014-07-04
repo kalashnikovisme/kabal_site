@@ -1,6 +1,6 @@
 class Web::Admin::NumbersController < Web::Admin::ApplicationController
   def index
-    @numbers = NumberDecorator.decorate_collection Number.all
+    @numbers = ::NumberDecorator.decorate_collection Number.all
   end
 
   def show
