@@ -5,7 +5,6 @@ class Web::Admin::CommentsController < ApplicationController
 
   def show
     @comment = Comment.find params[:id]
-    @users = UserDecorator.decorate_collection User.with(last_comment_id: params[:id])
   end
 
   def new
