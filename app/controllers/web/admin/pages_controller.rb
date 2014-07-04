@@ -5,7 +5,6 @@ class Web::Admin::PagesController < Web::Admin::ApplicationController
 
   def show
     @page = Page.find params[:id]
-    @users = UserDecorator.decorate_collection User.with(last_page_id: params[:id])
   end
 
   def new
