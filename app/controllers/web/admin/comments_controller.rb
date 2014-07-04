@@ -1,4 +1,4 @@
-class Web::Admin::CommentsController < ApplicationController
+class Web::Admin::CommentsController < Web::Admin::ApplicationController
   def index
     @comments = Comment.all
   end
