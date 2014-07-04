@@ -1,0 +1,11 @@
+= simple_form_for @comment, url: { controller: "admin/comments", action: action }, html: { class: 'form-horizontal' } do |f|
+  %fieldset
+    .field
+      = f.input :text, as: :string, label: false, placeholder: t('.title')
+    .field
+      = f.input :solution_state, as: :select, label: false
+    .field
+      = f.association :number, label_method: :value, value_method: :id
+  .form-actions
+    = f.button :submit, class: 'btn btn-primary'
+    = link_to t('.cancel', default: t("helpers.links.cancel")), admin_comments_path, class: 'btn'
