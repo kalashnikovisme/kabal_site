@@ -7,4 +7,12 @@ class NumberDecorator < Draper::Decorator
   def unsolved_comments_count
     model.comments.select { |comment| not comment.solved? }.count
   end
+  def short_value
+    if model.value.size > 50
+      model.value.first(50) + "..."
+    else
+      model.value
+    end
+  end
+
 end
