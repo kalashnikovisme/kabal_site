@@ -6,9 +6,9 @@ class Web::NumbersController < Web::ApplicationController
   end
 
   def create
-    number = Number.find_by_value params[:number][:value]
-    if number
-      redirect_to number_path(number)
+    number = Number.where value: params[:value], language: params[:language]
+    if number.any?
+      redirect_to number_path(number.first)
     else
       @number = Number.new params[:number]
       if @number.save

@@ -14,7 +14,7 @@
     - @numbers.each do |number|
       %tr
         %td= link_to number.id, edit_admin_number_path(number)
-        %td= link_to number.value, edit_admin_number_path(number)
+        %td= link_to number.short_value, edit_admin_number_path(number)
         %td= number.language
         %td= number.unsolved_comments_count
         %td
