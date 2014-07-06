@@ -9,4 +9,7 @@ module KabalHelper
     end
     languages_local
   end
+  def kabal_returns_error?(return_value)
+    not (return_value === /^[\d]+(\.[\d]+){0,1}$/)
+  end
 end

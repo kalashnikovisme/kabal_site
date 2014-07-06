@@ -1,0 +1,5 @@
+ru:
+  kabal:
+    errors:
+      Number is out of the range for current language: Число выходит за пределы диапозона
+      "Current language doesn't support fractional numbers": Поддержка дробных чисел для данного языка пока отсутствует
