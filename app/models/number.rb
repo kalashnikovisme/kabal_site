@@ -4,6 +4,6 @@ class Number < ActiveRecord::Base
 
   has_many :comments
 
-  validates :value, presence: true
+  validates :value, presence: true, number: true
   validates :language, presence: true
 end
