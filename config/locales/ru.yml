@@ -13,3 +13,10 @@ ru:
       pages:
         form:
           title: Название страницы
+  activerecord:
+    errors:
+      models:
+        number:
+          attributes:
+            value:
+              number: не является числом
