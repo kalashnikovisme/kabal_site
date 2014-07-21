@@ -3,7 +3,7 @@ ru:
     Russian: Русский
     English: Английский
   helpers:
-    what_number_is: "Что за число?"
+    project_name: "Что за число?"
   buttons:
     press_button: Нажмите на кнопку
   admin:
