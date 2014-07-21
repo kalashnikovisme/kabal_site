@@ -6,16 +6,16 @@ class Web::NumbersController < Web::ApplicationController
   end
 
   def create
-    number = Number.where value: params[:value], language: params[:language]
-    if number.any?
-      redirect_to number_path(number.first)
-    else
+    number = Number.where value: params[:number][:value], language: params[:number][:language]
+    unless number.any?
       @number = Number.new params[:number]
       if @number.save
         redirect_to number_path(@number), flash: :success
       else
         render :new, flash: :error
       end
+    else
+      redirect_to number_path(number.first)
     end
   end
 
