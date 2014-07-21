@@ -6,16 +6,16 @@ class Web::NumbersController < Web::ApplicationController
   end
 
   def create
-    number = Number.where value: params[:value], language: params[:language]
-    if number.any?
-      redirect_to number_path(number.first)
-    else
+    number = Number.where value: params[:number][:value], language: params[:number][:language]
+    unless number.any?
       @number = Number.new params[:number]
       if @number.save
         redirect_to number_path(@number), flash: :success
       else
         render :new, flash: :error
       end
+    else
+      redirect_to number_path(number.first)
     end
   end
 
@@ -24,7 +24,7 @@ class Web::NumbersController < Web::ApplicationController
   def show
     @new_number = Number.new
     @number = Number.find(params[:id]).decorate
-    @number_as_words = to_text_in_language @number.value.to_i, @number.language
+    @number_as_words = to_text_in_language @number.value.to_f, @number.language
     @comment = Comment.new
   end
 
