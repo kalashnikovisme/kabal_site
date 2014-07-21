@@ -1,6 +1,10 @@
 module ApplicationHelper
   include KabalHelper
 
+  def title(page_title)
+    content_for(:title) { page_title }
+  end
+
   def links
     links = []
     Page.where(navbar: :true).each do |page|
