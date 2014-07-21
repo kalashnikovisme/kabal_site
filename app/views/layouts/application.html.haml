@@ -18,5 +18,7 @@
       .navbar-collapse.collapse.navbar-responsive-collapse
         %ul.nav.navbar-nav#navbar
           != links
+          - if signed_in?
+            %li= link_to t('admin.panel'), admin_path
     .jumbotron
       = yield

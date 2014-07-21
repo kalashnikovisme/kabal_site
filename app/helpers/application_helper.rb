@@ -1,5 +1,6 @@
 module ApplicationHelper
   include KabalHelper
+  include AuthHelper
 
   def title(page_title)
     content_for(:title) { page_title }

@@ -13,6 +13,28 @@ ru:
       pages:
         form:
           title: Название страницы
+      numbers:
+        index:
+          title: Числа
+        edit:
+          title: Изменить число
+        new:
+          title: Добавить число
+      comments:
+        index:
+          title: Комментарии
+        edit:
+          title: Изменить комментарий
+        new:
+          title: Добавить комментарий
+      pages:
+        index:
+          title: Страницы
+        edit:
+          title: Изменить страницу
+        new:
+          title: Добавить страницу
+
   activerecord:
     errors:
       models:
