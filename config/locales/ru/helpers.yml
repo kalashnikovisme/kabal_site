@@ -4,6 +4,7 @@ ru:
     English: Английский
   helpers:
     project_name: "Что за число?"
+    type_a_number: Введите число
   buttons:
     press_button: Нажмите на кнопку
   admin:
