@@ -6,4 +6,10 @@ class Web::ApplicationController < ApplicationController
       redirect_to new_session_path
     end
   end
+
+  if Rails.env.production?
+    rescue_from ActionController::RoutingError, ActionView::MissingTemplate, ActiveRecord::RecordNotFound, NoMethodError do |exception|
+      redirect_to not_found_errors_path
+    end
+  end
 end
