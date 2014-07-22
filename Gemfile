@@ -14,6 +14,7 @@ gem 'react-rails'
 gem 'draper'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'russian'
+gem 'natdebt'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

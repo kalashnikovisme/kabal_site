@@ -1,5 +1,5 @@
 KabalSite::Application.routes.draw do
-  root to: "web/numbers#new"
+  root to: "web/welcome#index"
 
   get '/admin' => "web/admin/welcome#index"
 
