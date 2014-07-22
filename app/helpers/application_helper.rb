@@ -13,4 +13,24 @@ module ApplicationHelper
     end
     links.join('\n')
   end
+
+  def copyright_notice_year_range(start_year)
+    start_year = start_year.to_i
+    current_year = Time.new.year
+    if current_year > start_year && start_year > 2000
+      "#{start_year} - #{current_year}"
+    elsif start_year > 2000
+      "#{start_year}"
+    else
+      "#{current_year}"
+    end
+  end
+
+  def site_link
+    "http://kabal.herokuapp.com"
+  end
+
+  def gem_link
+    "https://github.com/kalashnikovisme/kabal"
+  end
 end

@@ -1,0 +1,10 @@
+%footer
+  .row-fluid
+    .span4{ height: "100%" }
+      = link_to site_link  do
+        &copy
+        = copyright_notice_year_range(2014)
+        = t('helpers.project_name')
+    .span4{ height: "100%" }
+      = link_to gem_link do
+        = t('helpers.gem.kabal')

@@ -3,8 +3,17 @@ ru:
     Russian: Русский
     English: Английский
   helpers:
-    what_number_is: "Что за число?"
+    project_name: "Что за число?"
+    type_a_number: Введите число
+    kg: кг
+    km: км
+    sec: сек
   buttons:
     press_button: Нажмите на кнопку
   admin:
     panel: Админка
+  features:
+    usa_debt: Национальный долг США
+    earth_mass: Масса Земли
+    distance_to_Andromeda_galaxy: Расстояние до галактики Андромеды
+    seconds_at_millenium: Секунд в тысячилетии
