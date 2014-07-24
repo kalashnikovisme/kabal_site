@@ -19,8 +19,10 @@
         .navbar-collapse.collapse.navbar-responsive-collapse
           %ul.nav.navbar-nav#navbar
             != links
-            - if signed_in?
+          - if signed_in?
+            %ul.nav.navbar-nav.navbar-right
               %li= link_to t('admin.panel'), admin_path
+              %li= link_to t('helpers.sign_out'), session_path, method: :delete
       .jumbotron
         = yield
     = render "layouts/footer"
