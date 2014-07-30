@@ -1,0 +1,5 @@
+en:
+  kabal:
+    errors:
+      Number is out of the range for current language: Number is out of the range for current language
+      "Current language doesn't support fractional numbers": "Current language doesn't support fractional numbers"
