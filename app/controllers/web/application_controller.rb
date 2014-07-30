@@ -1,9 +1,18 @@
 class Web::ApplicationController < ApplicationController
   include AuthHelper
+  before_filter :set_locale
 
   def check_signed_in
     unless signed_in?
       redirect_to new_session_path
+    end
+  end
+
+  def set_locale
+    if params[:locale] and I18n.available_locales.include? params[:locale].to_sym
+      I18n.locale = params[:locale]
+    else
+      I18n.locale = I18n.default_locale
     end
   end
 
