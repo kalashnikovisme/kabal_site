@@ -1,0 +1,44 @@
+de:
+  web:
+    numbers:
+      new:
+        type_a_number: Geben Sie die Anzahl der
+      show:
+        enter_another_number: Введите другое число
+        you_have_entered: "Вы ввели"
+        wrong: "Неправильно?"
+        wrong_number_created: Число составлено неправильно
+        type_your_comment: "Добавьте комментарий (необязательно)"
+    admin:
+      pages:
+        form:
+          title: Название страницы
+      numbers:
+        index:
+          title: Числа
+        edit:
+          title: Изменить число
+        new:
+          title: Добавить число
+      comments:
+        index:
+          title: Комментарии
+        edit:
+          title: Изменить комментарий
+        new:
+          title: Добавить комментарий
+      pages:
+        index:
+          title: Страницы
+        edit:
+          title: Изменить страницу
+        new:
+          title: Добавить страницу
+
+  activerecord:
+    errors:
+      models:
+        number:
+          attributes:
+            value:
+              number: не является числом
