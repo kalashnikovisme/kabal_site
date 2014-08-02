@@ -8,8 +8,9 @@ module ApplicationHelper
   end
 
   def links
+    #FIXME запросы из helper
     links = []
-    Page.where(navbar: :true).each do |page|
+    Page.where(navbar: :true, language: I18n.locale).each do |page|
       links << content_tag(:li, link_to(page.title, page_path(page.slug)))
     end
     links.join("")
