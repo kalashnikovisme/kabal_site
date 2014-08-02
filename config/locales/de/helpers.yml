@@ -1,0 +1,23 @@
+de:
+  languages:
+    Russian: Russisch
+    English: Englisch
+    Deutsch: Deutsch
+  helpers:
+    project_name: "Welche Anzahl?"
+    type_a_number: Geben Sie die Anzahl ein
+    kg: Kg
+    km: Km
+    sec: Sek
+    sign_out: Abmelden
+  buttons:
+    press_button: Drücken Sie den Knopf.
+  admin:
+    panel: Administratorenpanel
+  features:
+    usa_debt: Staatsverschuldung USA
+    earth_mass: Masse des Planeten Erde
+    distance_to_Andromeda_galaxy: Entfernung bis zur Andromedagalaxie
+    seconds_at_millenium: 1000 Sekunden im Millennium
+  errors:
+    not_found: Die Seite wurde nicht gefunden.

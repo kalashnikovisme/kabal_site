@@ -1,5 +1,44 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  web:
+    numbers:
+      new:
+        type_a_number: Type a number
+      show:
+        enter_another_number: Enter another number
+        you_have_entered: "You've entered"
+        wrong: "Wrong?"
+        wrong_number_created: Number was created wrong
+        type_your_comment: Add comment
+    admin:
+      pages:
+        form:
+          title: Title
+      numbers:
+        index:
+          title: Numbers
+        edit:
+          title: Edit number
+        new:
+          title: New number
+      comments:
+        index:
+          title: Comments
+        edit:
+          title: Edit comment
+        new:
+          title: New comment
+      pages:
+        index:
+          title: Pages
+        edit:
+          title: Edit page
+        new:
+          title: New page
+
+  activerecord:
+    errors:
+      models:
+        number:
+          attributes:
+            value:
+              number: is not number

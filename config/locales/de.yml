@@ -1,0 +1,43 @@
+﻿de:
+  web:
+    numbers:
+      new:
+        type_a_number: drucken Nummer
+      show:
+        enter_another_number: einschlagen andere zahl
+        you_have_entered: Sie einschlagen
+        wrong: "nicht richtig?"
+        wrong_number_created: Das Datum wurde falsch eingegeben
+        type_your_comment: Kommentare hinzufügen
+    admin:
+      pages:
+        form:
+          title: Überschrift
+      numbers:
+        index:
+          title: Überschrift
+        edit:
+          title: verändern Zahl
+        new:
+          title: Überschrift
+      comments:
+        index:
+          title: Überschrift
+        edit:
+          title: umgestalten
+        new:
+          title: Kommentare hinzufügen
+      pages:
+        index:
+          title: Überschrift Seite
+        edit:
+          title: umgestalten
+        new:
+          title: hinzufügen Seite
+    activerecord:
+      errors:
+        models:
+          number:
+            attributes:
+              value:
+                number: keine Zahl

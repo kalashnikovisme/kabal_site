@@ -1,4 +1,4 @@
-class Web::CommentsController < ApplicationController
+class Web::CommentsController < Web::ApplicationController
   def create
     @comment = Comment.new params[:comment]
     if @comment.save
