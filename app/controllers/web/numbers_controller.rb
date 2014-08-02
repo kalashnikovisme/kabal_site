@@ -25,11 +25,7 @@ class Web::NumbersController < Web::ApplicationController
   def show
     @new_number = Number.new
     @number = Number.find(params[:id]).decorate
-    value = @number.value.to_f
-    if needs_round_for_language? @number
-      value = value.to_i
-    end
-    @number_as_words = to_text_in_language value, @number.language
+    @number_as_words = to_text_in_language @number.value, @number.language
     @comment = Comment.new
   end
 
