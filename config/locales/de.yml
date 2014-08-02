@@ -1,44 +1,43 @@
-de:
+﻿de:
   web:
     numbers:
       new:
-        type_a_number: Geben Sie die Anzahl der
+        type_a_number: drucken Nummer
       show:
-        enter_another_number: Введите другое число
-        you_have_entered: "Вы ввели"
-        wrong: "Неправильно?"
-        wrong_number_created: Число составлено неправильно
-        type_your_comment: "Добавьте комментарий (необязательно)"
+        enter_another_number: einschlagen andere zahl
+        you_have_entered: Sie einschlagen
+        wrong: "nicht richtig?"
+        wrong_number_created: Das Datum wurde falsch eingegeben
+        type_your_comment: Kommentare hinzufügen
     admin:
       pages:
         form:
-          title: Название страницы
+          title: Überschrift
       numbers:
         index:
-          title: Числа
+          title: Überschrift
         edit:
-          title: Изменить число
+          title: verändern Zahl
         new:
-          title: Добавить число
+          title: Überschrift
       comments:
         index:
-          title: Комментарии
+          title: Überschrift
         edit:
-          title: Изменить комментарий
+          title: umgestalten
         new:
-          title: Добавить комментарий
+          title: Kommentare hinzufügen
       pages:
         index:
-          title: Страницы
+          title: Überschrift Seite
         edit:
-          title: Изменить страницу
+          title: umgestalten
         new:
-          title: Добавить страницу
-
-  activerecord:
-    errors:
-      models:
-        number:
-          attributes:
-            value:
-              number: не является числом
+          title: hinzufügen Seite
+    activerecord:
+      errors:
+        models:
+          number:
+            attributes:
+              value:
+                number: keine Zahl

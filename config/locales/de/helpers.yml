@@ -1,23 +1,23 @@
-ru:
+de:
   languages:
-    Russian: Русский
-    English: Английский
-    Deutsch: Немецкий
+    Russian: Russisch
+    English: Englisch
+    Deutsch: Deutsch
   helpers:
-    project_name: "Что за число?"
-    type_a_number: Введите число
-    kg: кг
-    km: км
-    sec: сек
-    sign_out: Выйти
+    project_name: "Welche Anzahl?"
+    type_a_number: Geben Sie die Anzahl ein
+    kg: Kg
+    km: Km
+    sec: Sek
+    sign_out: Abmelden
   buttons:
-    press_button: Нажмите на кнопку
+    press_button: Drücken Sie den Knopf.
   admin:
-    panel: Админка
+    panel: Administratorenpanel
   features:
-    usa_debt: Национальный долг США
-    earth_mass: Масса Земли
-    distance_to_Andromeda_galaxy: Расстояние до галактики Андромеды
-    seconds_at_millenium: Секунд в тысячилетии
+    usa_debt: Staatsverschuldung USA
+    earth_mass: Masse des Planeten Erde
+    distance_to_Andromeda_galaxy: Entfernung bis zur Andromedagalaxie
+    seconds_at_millenium: 1000 Sekunden im Millennium
   errors:
-    not_found: "404: Cтраница не найдена"
+    not_found: Die Seite wurde nicht gefunden.

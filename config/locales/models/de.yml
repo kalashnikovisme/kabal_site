@@ -1,5 +1,5 @@
-ru:
+de:
   activerecord:
     attributes:
       number:
-        value: Введённая строка
+        value: Eingegebene Zeile
