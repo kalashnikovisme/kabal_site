@@ -1,11 +1,13 @@
 = simple_form_for @page, url: { controller: "admin/pages", action: action }, html: { class: 'form-horizontal' } do |f|
   %fieldset
     .field
-      = f.input :title, as: :string, label: false, placeholder: t('.title')
+      = f.input :title, as: :string, label: false
     .field
       = f.input :slug, as: :string, label: false
     .field.checkbox
-      = f.input :navbar, as: :boolean, placeholder: t('.slug')
+      = f.input :navbar, as: :boolean
+    .field
+      = f.input :language, as: :select, collection: I18n.available_locales, selected_index: 1
     .field_ckeditor
       = f.input :body, label: false, input_html: { cols: 125 }
   .form-actions
