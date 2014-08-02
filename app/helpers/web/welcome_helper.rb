@@ -3,10 +3,11 @@ require 'natdebt'
 module Web::WelcomeHelper
   include FeaturesHelper
   def usa_debt
-    "$#{Natdebt.current}"
+    @debt = Natdebt.current
+    "$#{@debt}"
   end
   def kabaled_usa_debt
-    to_text_in_language Natdebt.current, language_by_abbr(I18n.locale)
+    to_text_in_language @debt, language_by_abbr(I18n.locale)
   end
   def earth_mass
     [earth_mass_number.to_s, t('helpers.kg')].join(" ")
