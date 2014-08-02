@@ -3,3 +3,7 @@ ru:
     attributes:
       number:
         value: Введённая строка
+      page:
+        title: Название
+        slug: Slug
+        language: Язык
