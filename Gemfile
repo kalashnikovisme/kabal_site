@@ -15,6 +15,7 @@ gem 'draper'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'russian'
 gem 'natdebt'
+gem 'figaro'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -30,6 +31,14 @@ group :test do
   gem 'pry'
 end
 
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+end
+
 group :production do
   gem 'rails_12factor'
+  gem 'unicorn'
 end
