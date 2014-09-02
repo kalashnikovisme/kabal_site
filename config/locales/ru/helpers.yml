@@ -19,5 +19,6 @@ ru:
     earth_mass: Масса Земли
     distance_to_Andromeda_galaxy: Расстояние до галактики Андромеды
     seconds_at_millenium: Секунд в тысячилетии
+    first_16_symbols_of_pi: Первые 16 символов числа Pi
   errors:
     not_found: "404: Cтраница не найдена"

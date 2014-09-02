@@ -19,5 +19,6 @@ de:
     earth_mass: Masse des Planeten Erde
     distance_to_Andromeda_galaxy: Entfernung bis zur Andromedagalaxie
     seconds_at_millenium: 1000 Sekunden im Millennium
+    first_16_symbols_of_pi: Die ersten 16 Zeichen der Zahl Pi
   errors:
     not_found: Die Seite wurde nicht gefunden.

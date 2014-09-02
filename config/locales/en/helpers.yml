@@ -19,5 +19,6 @@ en:
     earth_mass: Mass of the Earth
     distance_to_Andromeda_galaxy: The distance to the Andromeda galaxy
     seconds_at_millenium: Seconds in the millennium
+    first_16_symbols_of_pi: The first 16 characters of the number pi
   errors:
     not_found: "404: Not found"
