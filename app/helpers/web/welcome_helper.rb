@@ -27,4 +27,10 @@ module Web::WelcomeHelper
   def kabaled_seconds_at_millenium
     to_text_in_language seconds_at_millenium, language_by_abbr(I18n.locale)
   end
+  def pi
+    Math::PI
+  end
+  def kabaled_pi
+    to_text_in_language pi, language_by_abbr(I18n.locale)
+  end
 end
