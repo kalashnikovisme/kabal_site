@@ -7,6 +7,9 @@
 !fonts/
 /coverage
 /config/database.yml
+/config/deploy/
+/shared/
+/public/system/
 /.sass-cache
 .vagrant
 *.sqlite3-journal
