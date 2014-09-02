@@ -6,6 +6,9 @@ de:
   helpers:
     project_name: "Welche Anzahl?"
     type_a_number: Geben Sie die Anzahl ein
+    wrong: "Falsch?"
+    add_comment_optional: "Einen Kommentar (optional)"
+    number_is_wrong: Die Zahl wird bis falsch gemacht
     kg: Kg
     km: Km
     sec: Sek

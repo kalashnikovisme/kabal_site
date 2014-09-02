@@ -16,6 +16,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'russian'
 gem 'natdebt'
 gem 'figaro'
+gem "i18n-js"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

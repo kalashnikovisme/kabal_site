@@ -6,6 +6,9 @@ en:
   helpers:
     project_name: "What kind of number?"
     type_a_number: Type a number
+    wrong: "Wrong?"
+    add_comment_optional: "Add comment (optional)"
+    number_is_wrong: "Number drawn incorrectly"
     kg: kg
     km: km
     sec: sec.

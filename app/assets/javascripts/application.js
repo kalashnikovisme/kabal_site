@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require react
 //= require director
+//= require i18n
+//= require i18n/translations
 
 $(document).ready(function() {
   $("#navbar").find("li").each(function() {
