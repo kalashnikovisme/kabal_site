@@ -1,7 +1,7 @@
 set :repo_url, 'git://github.com/kalashnikovisme/kabal_site.git'
+set :application, 'kabal_site'
 set :app_dir, "/srv/#{application}"
 set :deploy_to, "#{app_dir}"
-set :application, 'kabal_site'
 application = 'kabal_site'
 set :rvm_type, :user
 set :rvm_ruby_version, '2.0.0-p353'
