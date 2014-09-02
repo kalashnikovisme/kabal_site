@@ -1,4 +1,6 @@
 set :repo_url, 'git://github.com/kalashnikovisme/kabal_site.git'
+set :app_dir, "/srv/#{application}"
+set :deploy_to, "#{app_dir}"
 set :application, 'kabal_site'
 application = 'kabal_site'
 set :rvm_type, :user
@@ -45,12 +47,8 @@ namespace :git do
     end
   end
 end
-lock '3.2.1'
 
-set :application, 'kabal_site'
-set :repo_url, 'git@github.com:kalashnikovisme/kabal_site.git'
-set :app_dir, "/srv/#{application}"
-set :deploy_to, "#{app_dir}"
+lock '3.2.1'
 
 namespace :deploy do
 
