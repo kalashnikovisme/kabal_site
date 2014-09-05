@@ -1,10 +1,8 @@
 set :repo_url, 'git://github.com/kalashnikovisme/kabal_site.git'
 set :application, 'kabal_site'
-set :app_dir, "/srv/#{application}"
-set :deploy_to, "#{app_dir}"
 application = 'kabal_site'
 set :rvm_type, :user
-set :rvm_ruby_version, '2.0.0-p353'
+set :deploy_to, '/var/www/apps/kabal_site'
 
 namespace :foreman do
   desc 'Start server'
@@ -36,43 +34,16 @@ namespace :foreman do
   end
 end
 
-namespace :git do
-  desc 'Deploy'
-  task :deploy do
-    ask(:message, "Commit message?")
-    run_locally do
-      execute "git add -A"
-      execute "git commit -m '#{fetch(:message)}'"
-      execute "git push"
-    end
-  end
-end
-
-lock '3.2.1'
-
 namespace :deploy do
-
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-    end
-  end
-
-  after :publishing, :restart
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-    end
-  end
   desc 'Setup'
   task :setup do
     on roles(:all) do
-      execute "mkdir  #{shared_path}/config/"
-      execute "mkdir  #{app_dir}/run/"
-      execute "mkdir  #{app_dir}/log/"
-      execute "mkdir  #{app_dir}/socket/"
-      execute "mkdir #{shared_path}/system"
-      sudo "ln -s /var/log/upstart /var/www/log/upstart"
+      #execute "mkdir  #{shared_path}/config/"
+      #execute "mkdir  /var/www/apps/#{application}/run/"
+      #execute "mkdir  /var/www/apps/#{application}/log/"
+      #execute "mkdir  /var/www/apps/#{application}/socket/"
+      #execute "mkdir #{shared_path}/system"
+      #sudo "ln -s /var/log/upstart /var/www/log/upstart"
 
       upload!('shared/database.yml', "#{shared_path}/config/database.yml")
 
@@ -80,16 +51,22 @@ namespace :deploy do
 
 
       upload!('shared/nginx.conf', "#{shared_path}/nginx.conf")
-      sudo 'stop nginx'
+      sudo '/etc/init.d/nginx stop'
+      #execute "mkdir /usr/local/nginx"
+      #execute "mkdir /usr/local/nginx/conf"
       sudo "rm -f /usr/local/nginx/conf/nginx.conf"
       sudo "ln -s #{shared_path}/nginx.conf /usr/local/nginx/conf/nginx.conf"
-      sudo 'start nginx'
+      sudo '/etc/init.d/nginx start'
 
       within release_path do
         with rails_env: fetch(:rails_env) do
+          execute :rake, "db:setup"
           execute :rake, "db:create"
         end
       end
+
+
+
     end
   end
 
@@ -143,9 +120,14 @@ namespace :deploy do
   before :setup, 'bundler:install'
 end
 
-namespace :log do
-  desc "Watch tailf env log"
-  task :tailf do
-    stream("tailf #{app_dir}/current/log/#{rails_env}.log")
+namespace :git do
+  desc 'Deploy'
+  task :deploy do
+    ask(:message, "Commit message?")
+    run_locally do
+      execute "git add -A"
+      execute "git commit -m '#{fetch(:message)}'"
+      execute "git push"
+    end
   end
 end
