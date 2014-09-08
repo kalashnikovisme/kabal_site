@@ -10,6 +10,7 @@ module KabalSite
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
     config.i18n.default_locale = :ru
+    I18n.enforce_available_locales = false
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.encoding = "utf-8"
     config.filter_parameters += [:password]

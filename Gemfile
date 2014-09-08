@@ -6,7 +6,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'validates'
 gem 'state_machine'
-gem 'kabal', '0.3.5'
+gem 'kabal', '1.1.0'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'bootstrap_flash_messages'
@@ -16,6 +16,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'russian'
 gem 'natdebt'
 gem 'figaro'
+gem "i18n-js"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

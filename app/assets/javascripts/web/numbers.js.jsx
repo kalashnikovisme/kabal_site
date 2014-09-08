@@ -12,8 +12,8 @@ if (URL.indexOf('#') != -1) {
 } else {
     numberId = URL.substring(URL.lastIndexOf('/') + 1);
 }
-var simple_form = <form charSet='UTF-8' action='/comments' method='post' className='simple_form form-horizontal' id='new_comment'><div style={divStyle}><input name='utf8' type='hidden' value='&#x2713;' /><input name='_method' type='hidden' value='post' /></div><div className="input hidden comment_number_id"><input className="hidden" id="comment_number_id" name="comment[number_id]" type="hidden" value={numberId} /></div><div className='input string optional comment_text'><input className='string optional' id='comment_text' name='comment[text]' placeholder='Добавьте комментарий (необязательно)' size='50' type='text' /></div><div className='form-actions'><input className='button btn btn-danger' name='commit' type='submit' value='Число составлено неправильно' /><a href='#button' className='btn btn-primary'>Скрыть</a></div></form>;
-var wrong_button = <a href='#form' className='btn btn-danger' rel='nofollow'>Неправильно?</a>;
+var simple_form = <form charSet='UTF-8' action='/comments' method='post' className='simple_form form-horizontal' id='new_comment'><div style={divStyle}><input name='utf8' type='hidden' value='&#x2713;' /><input name='_method' type='hidden' value='post' /></div><div className="input hidden comment_number_id"><input className="hidden" id="comment_number_id" name="comment[number_id]" type="hidden" value={numberId} /></div><div className='input string optional comment_text'><input className='string optional' id='comment_text' name='comment[text]' placeholder={I18n.t("helpers.add_comment_optional")} size='50' type='text' /></div><div className='form-actions'><input className='button btn btn-danger' name='commit' type='submit' value={I18n.t("helpers.number_is_wrong")} /><a href='#button' className='btn btn-primary'>Скрыть</a></div></form>;
+var wrong_button = <a href='#form' className='btn btn-danger' rel='nofollow'>{I18n.t("helpers.wrong")}</a>;
 var wrong_form = React.createClass({
   getInitialState: function() {
     return { currentForm: 'button' };

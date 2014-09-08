@@ -14,3 +14,4 @@
 .vagrant
 *.sqlite3-journal
 /config/application.yml
+/Procfile

@@ -6,6 +6,9 @@ ru:
   helpers:
     project_name: "Что за число?"
     type_a_number: Введите число
+    wrong: "Неправильно?"
+    add_comment_optional: "Добавить комментарий (необязательно)"
+    number_is_wrong: "Число составлено неверно"
     kg: кг
     km: км
     sec: сек
