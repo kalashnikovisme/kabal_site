@@ -1,4 +1,5 @@
 ru:
+  wrong_login: Неверный логин или пароль
   web:
     numbers:
       new:

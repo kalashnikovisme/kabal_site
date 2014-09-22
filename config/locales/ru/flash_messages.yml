@@ -1,0 +1,8 @@
+ru:
+  flash_messages:
+    defaults:
+      success: Успешно
+    web:
+      comments:
+        create:
+          success: "Комментарий добавлен. В ближайшее время он будет рассмотрен."

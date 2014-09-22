@@ -14,5 +14,6 @@
     .content
       = render "layouts/navbar"
       .jumbotron
+        = flash_messages :close
         = yield
     = render "layouts/footer"
