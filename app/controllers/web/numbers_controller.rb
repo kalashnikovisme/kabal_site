@@ -10,7 +10,7 @@ class Web::NumbersController < Web::ApplicationController
     unless number.any?
       @number = Number.new params[:number]
       if @number.save
-        redirect_to number_path(@number), flash: :success
+        redirect_to number_path(@number)
       else
         render :new, flash: :error
       end

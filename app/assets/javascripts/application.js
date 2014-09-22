@@ -23,4 +23,7 @@ $(document).ready(function() {
       $(this).addClass("active");
     }
   });
+  $(".close").click(function() {
+    $(".alert").hide();
+  });
 });
