@@ -10,7 +10,7 @@ class Web::SessionsController < Web::ApplicationController
       redirect_to admin_path, flash: :success
     else
       @user = User.new params[:user]
-      flash[:notice] = t('.wrong_login')
+      flash[:error] = t('.wrong_login')
       render action: :new
     end
   end
