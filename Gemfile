@@ -16,6 +16,8 @@ gem 'russian'
 gem 'natdebt'
 gem 'figaro'
 gem "i18n-js"
+gem 'wysiwyg-rails'
+gem "font-awesome-rails"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
