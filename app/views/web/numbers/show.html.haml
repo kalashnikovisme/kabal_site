@@ -11,10 +11,10 @@
   %h4
     = t('.you_have_entered')
     \:
-    - unless kabal_returns_error? @number_as_words
+    - if !kabal_returns_error?(@number_as_words)
       = @number_as_words
     - else
-      = t("kabal.errors.#{@number_as_words}")
+      = t('kabal.errors.unsupported_number')
 
   - unless @number.has_comment?
     = javascript_include_tag "web/numbers"

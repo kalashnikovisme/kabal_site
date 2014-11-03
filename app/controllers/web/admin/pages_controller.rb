@@ -1,6 +1,9 @@
 class Web::Admin::PagesController < Web::Admin::ApplicationController
   def index
-    @pages = Page.all
+    @pages = {}
+    I18n.available_locales.each do |locale|
+      @pages[language_by_abbr(locale)] = Page.where language: locale
+    end
   end
 
   def show

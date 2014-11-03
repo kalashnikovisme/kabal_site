@@ -10,7 +10,7 @@ module KabalHelper
     languages_local
   end
   def kabal_returns_error?(return_value)
-    not (return_value === /^[\d]+(\.[\d]+){0,1}$/)
+    return_value === /^[\d]+(\.[\d]+){0,1}$/
   end
   def kabal_language_supports_fractional?(language)
     language_supports_fractional? language
