@@ -4,7 +4,7 @@ ru:
     English: Английский
     Deutsch: Немецкий
   helpers:
-    project_name: "Что за число?"
+    project_name: "Kabal Демо"
     type_a_number: Введите число
     wrong: "Неправильно?"
     add_comment_optional: "Добавить комментарий (необязательно)"

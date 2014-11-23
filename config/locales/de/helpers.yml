@@ -4,7 +4,7 @@ de:
     English: Englisch
     Deutsch: Deutsch
   helpers:
-    project_name: "Welche Anzahl?"
+    project_name: "Kabal Demo"
     type_a_number: Geben Sie die Anzahl ein
     wrong: "Falsch?"
     add_comment_optional: "Einen Kommentar (optional)"

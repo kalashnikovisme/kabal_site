@@ -4,7 +4,7 @@ en:
     English: English
     Deutsch: German
   helpers:
-    project_name: "What kind of number?"
+    project_name: "Kabal Demo"
     type_a_number: Type a number
     wrong: "Wrong?"
     add_comment_optional: "Add comment (optional)"
