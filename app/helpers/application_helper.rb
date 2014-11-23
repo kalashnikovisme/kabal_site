@@ -16,10 +16,14 @@ module ApplicationHelper
     links.join("")
   end
 
+  def with_alpha_2_code(locale)
+    locale == :en ? :gb : locale
+  end
+
   def locales_languages
     locales = []
     I18n.available_locales.each do |locale|
-      locales << content_tag(:li, link_to(language_by_abbr(locale), "?locale=#{locale}"))
+      locales << content_tag(:li, link_to(content_tag(:span, '', class: "flag-icon flag-icon-#{with_alpha_2_code(locale)}"), "?locale=#{locale}"))
     end
     locales.join("")
   end

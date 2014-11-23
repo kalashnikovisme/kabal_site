@@ -18,6 +18,7 @@ gem 'figaro'
 gem "i18n-js"
 gem 'wysiwyg-rails'
 gem "font-awesome-rails"
+gem 'flag_icon_css_rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
