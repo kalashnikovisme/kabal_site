@@ -5,9 +5,11 @@
         &copy
         = copyright_notice_year_range(2014)
         = t('helpers.project_name')
-    .col-md-2
+    .col-md-1
       = link_to gem_link do
         = t('helpers.gem.kabal')
-    .col-md-2
+    .col-md-1
       = link_to gem_link do
         = image_tag 'https://badge.fury.io/rb/kabal.png'
+    .col-md-offset-1.col-md-1
+      = render 'layouts/github_buttons'
