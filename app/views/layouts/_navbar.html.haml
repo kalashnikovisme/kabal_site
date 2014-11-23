@@ -9,6 +9,7 @@
   .navbar-collapse.collapse.navbar-responsive-collapse
     %ul.nav.navbar-nav#navbar
       != links
+      %li= link_to 'Kabal on Rubygems', gem_link
     %ul.nav.navbar-nav.navbar-right
       != locales_languages
       - if signed_in?
