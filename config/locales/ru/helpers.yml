@@ -14,7 +14,7 @@ ru:
     sec: сек
     sign_out: Выйти
   buttons:
-    press_button: Нажмите на кнопку
+    press_button: Число прописью
   admin:
     panel: Админка
   features:
