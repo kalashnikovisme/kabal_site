@@ -1,6 +1,6 @@
 .navbar.navbar-default
   .navbar-header
-    %button.navbar-toggle{"data-target" => ".navbar-responsive-collapse", "data-toggle" => "collapse", type: "button"}
+    %button.navbar-toggle{'data-target' => '.navbar-responsive-collapse', 'data-toggle' => 'collapse', type: 'button'}
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
@@ -10,6 +10,8 @@
     %ul.nav.navbar-nav#navbar
       != links
       %li= link_to 'Kabal on Rubygems', gem_link
+      - if params[:locale] == 'ru' || !params[:locale]
+        %li= link_to 'Ё-приложение', karamzin_root_path
     %ul.nav.navbar-nav.navbar-right
       != locales_languages
       - if signed_in?

@@ -1,0 +1,16 @@
+.navbar.navbar-default
+  .navbar-header
+    %button.navbar-toggle{ data: { target: '.navbar-responsive-collapse', toggle: :collapse }, type: :button }
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %a.navbar-brand.karamzin{ href: karamzin_root_path }
+      = image_tag 'karamzin.jpg'
+  .navbar-collapse.collapse.navbar-responsive-collapse
+    %ul.nav.navbar-nav#navbar
+      != links
+      %li= link_to 'Karamzin on Rubygems', configus.karamzin.gem_link
+    %ul.nav.navbar-nav.navbar-right
+      - if signed_in?
+        %li= link_to t('admin.panel'), admin_path
+        %li= link_to t('helpers.sign_out'), session_path, method: :delete

@@ -1,0 +1,11 @@
+.row
+  .col-md-12
+    = simple_form_for @text, url: karamzin_text_path, method: :get do |f|
+      - if @text.errors.any?
+        .alert.alert-dismissable.alert-danger
+          %ul
+            - @text.errors.full_messages.each do |msg|
+              %li= msg
+      = f.input :text, as: :text, label: false, error: false
+      .form-actions
+        = f.button :submit, t('helpers.karamzin.past_yo'), class: 'btn btn-primary btn-lg'

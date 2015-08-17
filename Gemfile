@@ -15,10 +15,12 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'russian'
 gem 'natdebt'
 gem 'figaro'
-gem "i18n-js"
+gem 'i18n-js'
 gem 'wysiwyg-rails'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'flag_icon_css_rails'
+gem 'configus'
+gem 'karamzin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -29,8 +31,8 @@ end
 group :test do
   gem 'simplecov', require: false
   gem 'minitest', '4.7.5'
-  gem "factory_girl_rails", "~> 4.0", require: false
-  gem 'tconsole', git: "git://github.com/gma/tconsole"
+  gem 'factory_girl_rails', '~> 4.0', require: false
+  gem 'tconsole', git: 'git://github.com/gma/tconsole'
   gem 'pry'
 end
 
