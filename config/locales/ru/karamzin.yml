@@ -1,0 +1,11 @@
+ru:
+  web:
+    karamzin:
+      texts:
+        show:
+          result: Результат
+  helpers:
+    karamzin:
+      past_a_text: Вставьте текст
+      past_yo: Вставить ё, там где она нужна
+      project_name: Ё-приложение

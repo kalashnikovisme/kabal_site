@@ -8,14 +8,10 @@
     = render 'layouts/google_analytics'
     = csrf_meta_tags
   %body
-    :javascript
-      I18n.defaultLocale = "#{I18n.default_locale}";
-      I18n.locale = "#{I18n.locale}";
-      I18n.currentLocale();
     .content
-      = render 'layouts/navbar'
+      = render 'layouts/karamzin/navbar'
       .jumbotron
         = flash_messages :close
         = yield
     = render 'layouts/footer'
-    = render 'layouts/github_ribbon', repository_name: 'kalashnikovisme/kabal'
+    = render 'layouts/github_ribbon', repository_name: 'kalashnikovisme/karamzin'

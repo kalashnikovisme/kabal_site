@@ -22,5 +22,8 @@ module KabalSite
     config.generators do |g|
       g.fixture_replacement :factory_girl
     end
+    ActionDispatch::Reloader.to_prepare do
+      load Rails.root.join('lib/configus.rb')
+    end
   end
 end
