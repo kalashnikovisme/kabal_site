@@ -105,7 +105,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     kabal (1.1.1)
-    karamzin (1.0)
+    karamzin (1.0.2)
     kgio (2.9.3)
     mail (2.5.4)
       mime-types (~> 1.16)
